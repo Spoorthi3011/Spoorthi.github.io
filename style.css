@@ -7,7 +7,7 @@ body, h1, h2, p {
 /* Define general styles for the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e0c9a3; /* Sandal color background */
     margin: 0;
     padding: 0;
 }
@@ -22,6 +22,13 @@ header {
 
 h1 {
     font-size: 2rem;
+    color: #ff6b6b; /* Black color for headings */
+}
+
+/* Subheading Styles */
+h2 {
+    font-size: 1.5rem;
+    color: #000; /* White color for subheadings */
 }
 
 /* Section Styles */
@@ -30,15 +37,22 @@ section {
     margin: 2rem;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Adding a simple transform animation */
+}
+
+section:hover {
+    transform: scale(1.05); /* Enlarge section on hover */
 }
 
 /* Link Styles */
 a {
     color: #0078d4;
     text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color change on hover */
 }
 
 a:hover {
+    color: #ff6b6b; /* Change link color on hover */
     text-decoration: underline;
 }
 
@@ -48,4 +62,3 @@ ul {
     margin-left: 20px;
 }
 
-/* Add more specific styles for individual sections as needed */
